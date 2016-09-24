@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	</head>
+<style type="text/css">
+body{font-size:20px}
+#txt{border:blue solid 2px;
+     width=:100px;
+     height=:500px;
+     padding=:5px;
+    }
+</style>
+<body>
+	<h1 id="con">南海争端问题</h1>
+	<div id="txt">
+		<p> 7月12日，应菲律宾单方面请求建立的所谓南海仲裁案的临时仲裁庭公布了仲裁决定，中国国家领导人发表谈话，表明了中国政府的严正立场，中华人民共和国政府发布关于在南海的领土主权和海洋权益的声明，中国外交部发布关于应菲律宾共和国请求建立的南海仲裁案仲裁庭所做裁决的声明，重申了中国在南海的领土主权和海洋权益，指出该裁决是无效的、没有约束力，中国不接受、不承认。</p>
+    </div>
+
+<from>
+	<input type="button" onclick="changecolor()" value="改变颜色">
+	<input type="button" onclick="changesize()" value="改变宽高">
+	<input type="button" onclick="hide()" value="隐藏内容">
+	<input type="button" onclick="show()" value="显示内容">
+	<input type="button" onclick="declet()" value="取消设置">
+</from>
+</body>
+<script type="text/javascript">
+     
+	  var txt=document.getElementById("txt");
+ 	  function changecolor()
+      { txt.style.color="red";
+        txt.style.backgroundColor="#ccc";
+      }
+      function changesize()
+      {  txt.style.width="150px";
+         txt,style.height="400px";
+      }
+      function hide()
+      {  txt.style.display="none";}
+      function show()
+      { txt.style.display="block";}
+      function declet()
+      {
+         var message=confirm("你确定要重置所有设置么？");
+        if(message==true)
+        {
+            txt.removeAttribute('style');
+        }
+      }
+</script>
+
+</html>
